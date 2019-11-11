@@ -132,7 +132,9 @@ xcopy /Y /Q "$(ProjectDir)..\cocos2d\external\uv\prebuilt\win32\*.*" "$(OutDir)"
 xcopy "$(ProjectDir)..\Resources" "$(OutDir)\Resources\" /D /E /I /F /Y
       
 
-copy "$(ProjectDir)lib\$(Configuration)\libcocos2d.dll" "$(OutDir)"   </Command>
+copy "$(ProjectDir)lib\$(Configuration)\libcocos2d.dll" "$(OutDir)"   
+
+copy "$(ProjectDir)lib\$(Configuration)\zlib1.dll" "$(OutDir)"  </Command>
       <Outputs>$(TargetName).cab</Outputs>
       <Inputs>$(TargetFileName)</Inputs>
     </CustomBuildStep>
